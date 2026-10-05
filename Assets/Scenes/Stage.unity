@@ -1382,7 +1382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2164396, y: 0, z: 0, w: 0.97629607}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
   m_LocalPosition: {x: 0, y: 1, z: 0.29999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2055,13 +2055,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487481151}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2164396, y: 0, z: 0, w: 0.97629607}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
   m_LocalPosition: {x: 0, y: 1, z: 0.29999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!114 &487481155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2093,7 +2093,7 @@ MonoBehaviour:
     Strategy: 0
     MaximumEffort: 4
     SmoothingTime: 0
-    Damping: 0.5
+    Damping: 2.46
     DampingWhenOccluded: 0.48
   ShotQualityEvaluation:
     Enabled: 0
@@ -5192,6 +5192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarHandler
   rb: {fileID: 1665321963}
+  gameModel: {fileID: 0}
 --- !u!114 &1665321965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6027,6 +6028,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 330585546}
+  - {fileID: 487481154}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 922036621}
@@ -6035,4 +6037,3 @@ SceneRoots:
   - {fileID: 1597785122}
   - {fileID: 753343129}
   - {fileID: 1665321962}
-  - {fileID: 487481154}
