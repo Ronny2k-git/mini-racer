@@ -57,9 +57,10 @@ public class EndlessLevelHandler : MonoBehaviour
     {
         while (true)
         {
+            UpdateSectionPositions();
+
             yield return waitFor100ms;
         }
-
     }
 
     void UpdateSectionPositions()
