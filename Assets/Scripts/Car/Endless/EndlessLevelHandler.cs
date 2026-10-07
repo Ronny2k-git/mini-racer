@@ -16,10 +16,15 @@ public class EndlessLevelHandler : MonoBehaviour
 
     const float sectionLength = 26;
 
+    // Shared X position so every section lines up, regardless of each prefab's root offset
+    float sectionXPosition;
+
     // Start is called once before the first execution of Update
     void Start()
     {
         playerCardTransform = GameObject.FindGameObjectWithTag("Player").transform;
+
+        sectionXPosition = sectionsPreFabs[0].transform.position.x;
 
         int prefabIndex = 0;
 
@@ -43,7 +48,7 @@ public class EndlessLevelHandler : MonoBehaviour
             GameObject randomSection = GetRandomSectionFromPool();
 
             // Move it into position and set it to active
-            randomSection.transform.position = new Vector3(sectionsPool[i].transform.position.x, 0, i * sectionLength);
+            randomSection.transform.position = new Vector3(sectionXPosition, 0, i * sectionLength);
             randomSection.SetActive(true);
 
             // Set the section in the array
@@ -78,7 +83,7 @@ public class EndlessLevelHandler : MonoBehaviour
                 sections[i] = GetRandomSectionFromPool();
 
                 //  Move the bew section into place and active it
-                sections[i].transform.position = new Vector3(lastSectionPosition.x, 0, lastSectionPosition.z + sectionLength * sections.Length);
+                sections[i].transform.position = new Vector3(sectionXPosition, 0, lastSectionPosition.z + sectionLength * sections.Length);
                 sections[i].SetActive(true);
             }
         }
