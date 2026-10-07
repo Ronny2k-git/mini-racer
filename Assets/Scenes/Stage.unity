@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndlessLevelHandler
   sectionsPreFabs:
-  - {fileID: 4039984092591804457, guid: aa7b8bb034fd55a78be9b031c1c40216, type: 3}
+  - {fileID: 5590532667771628719, guid: 1185b8971a422aba79c9df88075897bc, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
